@@ -1,4 +1,6 @@
 ﻿using LanchoneteWeb.Context;
+using LanchoneteWeb.Repositories;
+using LanchoneteWeb.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace LanchoneteWeb;
@@ -18,7 +20,9 @@ public class Startup
         //regitrar o contexto como serviço de acesso ao banco de dados
         services.AddDbContext<AppDbContext>(options =>
                  options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
+        
+        services.AddTransient<ILancheRepository, LancheRepository>();
+        services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 
         services.AddControllersWithViews();
     }
