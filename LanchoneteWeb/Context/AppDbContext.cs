@@ -14,5 +14,7 @@ namespace LanchoneteWeb.Context
         //Classe Categorias, tabela no banco Categorias
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Lanche> Lanches { get; set; }  
+        public DbSet<CarrinhoCompraItem> CarrinhoCompraItems { get; set; }
+
     }
 }

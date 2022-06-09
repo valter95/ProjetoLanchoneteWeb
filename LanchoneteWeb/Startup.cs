@@ -1,4 +1,5 @@
 ﻿using LanchoneteWeb.Context;
+using LanchoneteWeb.Models;
 using LanchoneteWeb.Repositories;
 using LanchoneteWeb.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -23,8 +24,15 @@ public class Startup
         
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+        //recuperar um instancia de httpcontextAccessor, request e response
+        services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+        //Registrando com addScoped gerado a cada request 
+        services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
 
         services.AddControllersWithViews();
+        services.AddMemoryCache(); // Ativa o uso de cache em memória  
+        services.AddSession(); // habilitando o session 
+        
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +53,8 @@ public class Startup
         app.UseStaticFiles();
 
         app.UseRouting();
+
+        app.UseSession(); // Ativando o session 
 
         app.UseAuthorization();
 

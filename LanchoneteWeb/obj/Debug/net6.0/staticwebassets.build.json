@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UruYyuN+KB0A9C1B1EFTvHKPp5Lqi3bBHx4e04VZCnY=",
+  "Hash": "RSaiQiqg7MdSu8DZnsFSWKfYbu9jIvpKfSPLPzW5sIk=",
   "Source": "LanchoneteWeb",
   "BasePath": "_content/LanchoneteWeb",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\images\\Full-Cart-icon.png",
+      "SourceId": "LanchoneteWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\",
+      "BasePath": "_content/LanchoneteWeb",
+      "RelativePath": "images/Full-Cart-icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Full-Cart-icon.png"
+    },
+    {
       "Identity": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\images\\imagem1.jpg",
       "SourceId": "LanchoneteWeb",
       "SourceType": "Discovered",
@@ -151,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\imagem4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\images\\remove.ico",
+      "SourceId": "LanchoneteWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\",
+      "BasePath": "_content/LanchoneteWeb",
+      "RelativePath": "images/remove.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\remove.ico"
     },
     {
       "Identity": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\js\\site.js",
