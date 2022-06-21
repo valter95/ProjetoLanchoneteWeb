@@ -21,7 +21,7 @@ public class Startup
         //regitrar o contexto como serviço de acesso ao banco de dados
         services.AddDbContext<AppDbContext>(options =>
                  options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-        
+
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         //recuperar um instancia de httpcontextAccessor, request e response
@@ -32,7 +32,7 @@ public class Startup
         services.AddControllersWithViews();
         services.AddMemoryCache(); // Ativa o uso de cache em memória  
         services.AddSession(); // habilitando o session 
-        
+
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,6 +60,12 @@ public class Startup
 
         app.UseEndpoints(endpoints =>
         {
+            endpoints.MapControllerRoute(
+                name: "categoriaFiltro",
+                pattern: "Lanche/{action}/{categoria?}",
+                defaults: new { Controller = "Lanche", action = "List" }
+                );
+
             endpoints.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");

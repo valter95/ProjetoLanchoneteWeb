@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "t5elTvOe5fEXQPdtx3990L44tCovdlcUXss1QG0Y7+M=",
+  "Hash": "8GGErivo4Y+nN0tJrxcSaNM3+6Od61nsldi/ygZHWpA=",
   "Source": "LanchoneteWeb",
   "BasePath": "_content/LanchoneteWeb",
   "Mode": "Default",
@@ -102,6 +102,40 @@
       "OriginalItemSpec": "wwwroot\\images\\cart-5-16.ico"
     },
     {
+      "Identity": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\images\\Envelope-icon24.png",
+      "SourceId": "LanchoneteWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\",
+      "BasePath": "_content/LanchoneteWeb",
+      "RelativePath": "images/Envelope-icon24.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Envelope-icon24.png"
+    },
+    {
+      "Identity": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\images\\faleconosco1.jpg",
+      "SourceId": "LanchoneteWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\",
+      "BasePath": "_content/LanchoneteWeb",
+      "RelativePath": "images/faleconosco1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\faleconosco1.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\images\\Full-Cart-icon.png",
       "SourceId": "LanchoneteWeb",
       "SourceType": "Discovered",
@@ -117,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Full-Cart-icon.png"
+    },
+    {
+      "Identity": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\images\\Home-iconred.png",
+      "SourceId": "LanchoneteWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\",
+      "BasePath": "_content/LanchoneteWeb",
+      "RelativePath": "images/Home-iconred.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Home-iconred.png"
     },
     {
       "Identity": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\images\\imagem1.jpg",
@@ -185,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\imagem4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\images\\phone-app-icon.png",
+      "SourceId": "LanchoneteWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\",
+      "BasePath": "_content/LanchoneteWeb",
+      "RelativePath": "images/phone-app-icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\phone-app-icon.png"
     },
     {
       "Identity": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\images\\remove.ico",
