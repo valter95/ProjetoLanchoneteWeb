@@ -24,6 +24,8 @@ public class Startup
 
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+        services.AddTransient<IPedidoRepository, PedidoRepository>();
+
         //recuperar um instancia de httpcontextAccessor, request e response
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         //Registrando com addScoped gerado a cada request 
