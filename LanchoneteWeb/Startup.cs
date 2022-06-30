@@ -2,6 +2,7 @@
 using LanchoneteWeb.Models;
 using LanchoneteWeb.Repositories;
 using LanchoneteWeb.Repositories.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace LanchoneteWeb;
@@ -21,6 +22,11 @@ public class Startup
         //regitrar o contexto como serviço de acesso ao banco de dados
         services.AddDbContext<AppDbContext>(options =>
                  options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+       
+        // incluindo o serviço do Identity para gerenciar usuarios e perfis 
+        services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
 
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
@@ -57,6 +63,8 @@ public class Startup
         app.UseRouting();
 
         app.UseSession(); // Ativando o session 
+
+        app.UseAuthentication(); //Ativando a autenticação feita pelo Identity
 
         app.UseAuthorization();
 
