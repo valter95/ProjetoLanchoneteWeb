@@ -6,7 +6,11 @@ namespace LanchoneteWeb.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            if (User.Identity.IsAuthenticated) // realiza uma restrição, somente quem está autenticado pode ver a view
+            {
+                return View();
+            }
+            return RedirectToAction("Login","Account");
         }
     }
 }
