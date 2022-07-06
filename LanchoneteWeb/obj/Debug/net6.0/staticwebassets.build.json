@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NJjKAon3j7P1+kCzw+69tG+jufqw4/+LWBrTBapz0Fc=",
+  "Hash": "kdj7My3v/Ml8584z80k3F3ufSxFYk3h24Oul5yK4h7E=",
   "Source": "LanchoneteWeb",
   "BasePath": "_content/LanchoneteWeb",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\images\\adminarea.jpg",
+      "SourceId": "LanchoneteWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\",
+      "BasePath": "_content/LanchoneteWeb",
+      "RelativePath": "images/adminarea.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\adminarea.jpg"
     },
     {
       "Identity": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\images\\cart-5-16.ico",
@@ -253,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\login_48.png"
+    },
+    {
+      "Identity": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\images\\negado1.png",
+      "SourceId": "LanchoneteWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\",
+      "BasePath": "_content/LanchoneteWeb",
+      "RelativePath": "images/negado1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\negado1.png"
     },
     {
       "Identity": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\images\\phone-app-icon.png",

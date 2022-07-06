@@ -48,7 +48,7 @@ namespace LanchoneteWeb.Controllers
             return View(loginVM);
         }
 
-        public IActionResult Register() 
+        public IActionResult Register()
         {
 
             return View();
@@ -56,7 +56,7 @@ namespace LanchoneteWeb.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken] // evita ataque CRSF
-        public async Task<IActionResult> Register(LoginViewModel registroVM) 
+        public async Task<IActionResult> Register(LoginViewModel registroVM)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +65,8 @@ namespace LanchoneteWeb.Controllers
 
                 if (result.Succeeded)
                 {
-                    // await _signInManager.SignInAsync(user, isPersistent: false);    
+                    // await _signInManager.SignInAsync(user, isPersistent: false);
+                    await _userManager.AddToRoleAsync(user, "Member");
                     return RedirectToAction("Login", "Account");
                 }
                 else
@@ -75,13 +76,20 @@ namespace LanchoneteWeb.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Logout() 
+        public async Task<IActionResult> Logout()
         {
             HttpContext.Session.Clear();
             HttpContext.User = null;
             await _signInManager.SignOutAsync();
-            return RedirectToAction("Index", "Home"); 
-        
+            return RedirectToAction("Index", "Home");
+
         }
+
+        public IActionResult AccessDenied()
+        {
+            return View();
+
+        }
+
     }
 }
