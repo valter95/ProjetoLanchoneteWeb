@@ -47,6 +47,7 @@ namespace LanchoneteWeb.Models
 
         //Criando o relacionamento com categoria 
         //CategoriaID virando chave estrangeira 
+        [Display(Name = "Categorias")]
         public int CategoriaID { get; set; }
         public virtual Categoria Categoria { get; set; }
 

@@ -5,6 +5,7 @@ using LanchoneteWeb.Repositories.Interfaces;
 using LanchoneteWeb.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using ReflectionIT.Mvc.Paging;
 
 namespace LanchoneteWeb;
 
@@ -53,6 +54,13 @@ public class Startup
         services.AddControllersWithViews();
         services.AddMemoryCache(); // Ativa o uso de cache em memória  
         services.AddSession(); // habilitando o session 
+
+        services.AddPaging(options =>
+        {
+            options.ViewName = "Bootstrap4";
+            options.PageParameterName = "pageindex";
+        });
+
 
     }
 

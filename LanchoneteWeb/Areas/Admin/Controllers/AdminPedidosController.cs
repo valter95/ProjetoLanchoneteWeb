@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using LanchoneteWeb.Context;
 using LanchoneteWeb.Models;
 using Microsoft.AspNetCore.Authorization;
+using ReflectionIT.Mvc.Paging;
+using LanchoneteWeb.ViewModels;
 
 namespace LanchoneteWeb.Areas.Admin.Controllers
 {
@@ -23,9 +25,25 @@ namespace LanchoneteWeb.Areas.Admin.Controllers
         }
 
         // GET: Admin/AdminPedidos
-        public async Task<IActionResult> Index()
+        //public async Task<IActionResult> Index()
+        //{
+        //      return View(await _context.Pedidos.ToListAsync());
+        //}
+
+        public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "Nome")
         {
-              return View(await _context.Pedidos.ToListAsync());
+            var resultado = _context.Pedidos.AsNoTracking().AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(filter))
+            {
+                resultado = resultado.Where(p => p.Nome.Contains(filter));
+            }
+
+            var model = await PagingList.CreateAsync(resultado, 5, pageindex, sort, "Nome");
+            model.RouteValue = new RouteValueDictionary { { "filter", filter } };
+
+            return View(model);
+
         }
 
         // GET: Admin/AdminPedidos/Details/5
@@ -151,14 +169,34 @@ namespace LanchoneteWeb.Areas.Admin.Controllers
             {
                 _context.Pedidos.Remove(pedido);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool PedidoExists(int id)
         {
-          return _context.Pedidos.Any(e => e.PedidoId == id);
+            return _context.Pedidos.Any(e => e.PedidoId == id);
+        }
+
+        public IActionResult PedidoLanches(int? id)
+        {
+            var pedido = _context.Pedidos
+                                 .Include(pd => pd.PedidoItens)
+                                 .ThenInclude(l => l.Lanche)
+                                 .FirstOrDefault(p => p.PedidoId == id);
+
+            if (pedido == null)
+            {
+                Response.StatusCode = 404;
+                    return View("PedidoNotFound", id.Value);
+            }
+            PedidoLancheViewModel pedidoLanches = new PedidoLancheViewModel()
+            {
+                Pedido = pedido,
+                PedidoDetalhes = pedido.PedidoItens
+            };
+            return View(pedidoLanches);
         }
     }
 }

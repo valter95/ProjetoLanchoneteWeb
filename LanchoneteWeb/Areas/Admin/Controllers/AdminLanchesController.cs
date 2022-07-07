@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using LanchoneteWeb.Context;
 using LanchoneteWeb.Models;
 using Microsoft.AspNetCore.Authorization;
+using ReflectionIT.Mvc.Paging;
 
 namespace LanchoneteWeb.Areas.Admin.Controllers
 {
@@ -23,11 +24,27 @@ namespace LanchoneteWeb.Areas.Admin.Controllers
         }
 
         // GET: Admin/AdminLanches
-        public async Task<IActionResult> Index()
+        //public async Task<IActionResult> Index()
+        //{
+        //    var appDbContext = _context.Lanches.Include(l => l.Categoria);
+        //    return View(await appDbContext.ToListAsync());
+        //}
+
+        public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "Nome")
         {
-            var appDbContext = _context.Lanches.Include(l => l.Categoria);
-            return View(await appDbContext.ToListAsync());
+            var resultado = _context.Lanches.Include(l => l.Categoria).AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(filter))
+            {
+                resultado = resultado.Where(p => p.Nome.Contains(filter));
+            }
+
+            var model = await PagingList.CreateAsync(resultado, 4, pageindex, sort, "Nome");
+            model.RouteValue = new RouteValueDictionary { { "filter", filter } };
+            return View(model);
         }
+
+
 
         // GET: Admin/AdminLanches/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -68,7 +85,7 @@ namespace LanchoneteWeb.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoriaID"] = new SelectList(_context.Categorias, "CategoriaId", "CategoriaNome", lanche.CategoriaID);
+            ViewBag.CategoriaID = new SelectList(_context.Categorias, "CategoriaId", "CategoriaNome", lanche.CategoriaID);
             return View(lanche);
         }
 
