@@ -36,6 +36,7 @@ public class Startup
         services.AddTransient<IPedidoRepository, PedidoRepository>();
 
         services.AddScoped<RelatorioVendasService>();
+        services.Configure<ConfigurationImagens>(Configuration.GetSection("ConfigurationPastaImagens"));
 
         //registrando serviço
         services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
