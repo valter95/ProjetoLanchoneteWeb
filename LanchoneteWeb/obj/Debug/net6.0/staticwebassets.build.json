@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oY3ayGixFOO9fFv5G9VgZmPSBA+RrHgrck6gciG8v9A=",
+  "Hash": "mgYKGqVvW86Anlw03a+W6xcvSgiPKmJ/p1Wo03dIZvU=",
   "Source": "LanchoneteWeb",
   "BasePath": "_content/LanchoneteWeb",
   "Mode": "Default",
@@ -168,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Full-Cart-icon.png"
+    },
+    {
+      "Identity": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\images\\hamburguer.png",
+      "SourceId": "LanchoneteWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\",
+      "BasePath": "_content/LanchoneteWeb",
+      "RelativePath": "images/hamburguer.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\hamburguer.png"
     },
     {
       "Identity": "C:\\Users\\Valtinho\\Programas\\ProjetoLanchoneteWeb\\LanchoneteWeb\\wwwroot\\images\\Home-iconred.png",

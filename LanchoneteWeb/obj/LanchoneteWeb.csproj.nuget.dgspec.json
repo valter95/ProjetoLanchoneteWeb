@@ -67,7 +67,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.6, )"
+              "version": "[6.0.7, )"
             },
             "ReflectionIT.Mvc.Paging": {
               "target": "Package",

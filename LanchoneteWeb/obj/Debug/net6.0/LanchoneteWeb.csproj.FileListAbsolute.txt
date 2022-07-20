@@ -238,8 +238,6 @@ C:\Users\Valtinho\Programas\ProjetoLanchoneteWeb\LanchoneteWeb\bin\Debug\net6.0\
 C:\Users\Valtinho\Programas\ProjetoLanchoneteWeb\LanchoneteWeb\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Valtinho\Programas\ProjetoLanchoneteWeb\LanchoneteWeb\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Valtinho\Programas\ProjetoLanchoneteWeb\LanchoneteWeb\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Valtinho\Programas\ProjetoLanchoneteWeb\LanchoneteWeb\bin\Debug\net6.0\runtimes\win-arm\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\Valtinho\Programas\ProjetoLanchoneteWeb\LanchoneteWeb\bin\Debug\net6.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Valtinho\Programas\ProjetoLanchoneteWeb\LanchoneteWeb\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Valtinho\Programas\ProjetoLanchoneteWeb\LanchoneteWeb\obj\Debug\net6.0\LanchoneteWeb.csproj.AssemblyReference.cache
 C:\Users\Valtinho\Programas\ProjetoLanchoneteWeb\LanchoneteWeb\obj\Debug\net6.0\LanchoneteWeb.GeneratedMSBuildEditorConfig.editorconfig
